@@ -1,0 +1,112 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    background-color: #2a3742;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #58a6ff;
+}
+
+#home h2,
+#about h2,
+#contact h2,
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #F5FFFA	;
+}
+
+main section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+#home h2 {
+    text-align: center;
+}
+
+#home-gif {
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    border: solid black 1px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    background-color: #e6f0ff;
+    padding: 2rem 2rem;
+    border-radius: 12px;
+}
+
+#contact p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+    background-color: #e6f0ff;
+}
+
+#copyright a, #contact a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
+#copyright a:hover, #contact a:hover {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #24292e;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
